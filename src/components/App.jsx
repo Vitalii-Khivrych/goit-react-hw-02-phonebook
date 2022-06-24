@@ -55,14 +55,14 @@ export class App extends Component {
     const filterArray = this.renderForFilter();
 
     return (
-      <div>
+      <>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
 
         <h2>Contacts</h2>
         <Filter value={filter} onChange={this.onChangeFilter} />
         <ContactList data={filterArray} onDeleteContact={this.deleteContact} />
-      </div>
+      </>
     );
   }
 }
