@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List } from './List/List';
+import { List } from '../List/List';
 import s from './ContactList.module.css';
 
 export function ContactList({ data, onDeleteContact }) {
@@ -11,7 +11,7 @@ export function ContactList({ data, onDeleteContact }) {
             contactId={id}
             name={name}
             number={number}
-            onClick={onDeleteContact}
+            onClick={() => onDeleteContact(id)}
           />
         </li>
       ))}
