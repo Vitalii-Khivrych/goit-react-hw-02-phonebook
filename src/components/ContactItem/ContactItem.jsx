@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import s from './List.module.css';
+import s from './ContactItem.module.css';
 
-export function List({ name, number, onClick }) {
+export function ContactItem({ name, number, onClick }) {
   return (
     <>
       <p className={s.text}>
@@ -14,7 +14,7 @@ export function List({ name, number, onClick }) {
   );
 }
 
-List.propTypes = {
+ContactItem.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,

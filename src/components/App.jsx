@@ -18,7 +18,9 @@ export class App extends Component {
 
   addContact = ({ name, number }) => {
     const { contacts } = this.state;
-    const isFindCopyContact = contacts.find(contact => contact.name === name);
+    const isFindCopyContact = contacts.find(
+      contact => contact.name.toLowerCase() === name.toLowerCase()
+    );
 
     if (isFindCopyContact) {
       alert(`${name} is already in contacts`);
