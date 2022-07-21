@@ -2,9 +2,9 @@
   font-size: 18px;
 }
 
-.text:not(:last-child) {
+/* .text:not(:last-child) {
   margin-bottom: 7px;
-}
+} */
 
 .btn {
   width: 44px;
